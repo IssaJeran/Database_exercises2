@@ -8,15 +8,17 @@ OR first_name = 'Maya';
 SELECT emp_no, first_name, last_name
 FROM employees
 WHERE first_name = 'Irena'
+AND gender = 'M'
 OR first_name = 'Vidya'
+AND gender = 'M'
 OR first_name = 'Maya'
-	AND gender = 'M';
+AND gender = 'M';
 
 
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE last_name LIKE '%E%'
-OR last_name LIKE 'E&';
+WHERE last_name LIKE 'E%'
+OR last_name LIKE '%E';
 
 SELECT emp_no, first_name, last_name
 FROM employees
